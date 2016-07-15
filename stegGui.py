@@ -125,7 +125,7 @@ class EncodeMenu:
         self.savePath = asksaveasfilename(filetypes=[
             ('BMP file', '*.bmp'),
             ('PNG file', '*.png')
-        ])
+        ], defaultextension='*.bmp')
 
         # Make sure the user entered a name. if not, do nothing
         if len(self.filepath) == 0 or len(self.savePath) == 0:
